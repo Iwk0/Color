@@ -13,9 +13,9 @@ public class Color {
     @Id
     private Long id;
 
-    private Short r = 0;
-    private Short g = 0;
-    private Short b = 0;
+    private Short red = 0;
+    private Short green = 0;
+    private Short blue = 0;
 
     private Color(ColorRequest colorRequest) {
         updateValueByType(colorRequest.getType(), colorRequest.getColor());
@@ -33,11 +33,11 @@ public class Color {
 
     private void updateValueByType(ColorRequest.Type type, short color) {
         if (ColorRequest.Type.RED == type) {
-            r = color;
+            red = color;
         } else if (ColorRequest.Type.GREEN == type) {
-            g = color;
+            green = color;
         } else {
-            b = color;
+            blue = color;
         }
     }
 }

@@ -6,13 +6,13 @@ import lombok.Getter;
 @Getter
 public class ColorResponse {
 
-    private final short r;
-    private final short g;
-    private final short b;
+    private final short red;
+    private final short green;
+    private final short blue;
 
     public ColorResponse(Color color) {
-        r = color.getR();
-        g = color.getG();
-        b = color.getB();
+        red = color.getRed();
+        green = color.getGreen();
+        blue = color.getBlue();
     }
 }
