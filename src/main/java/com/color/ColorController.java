@@ -17,7 +17,7 @@ public class ColorController {
 
     @PostMapping
     //It is possible to be added as filter but for this purpose it is no needed
-    @CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin
     private Mono<ColorResponse> create(@Valid @RequestBody ColorRequest colorRequest) {
         return colorService.create(colorRequest);
     }
